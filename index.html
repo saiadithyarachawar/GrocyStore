@@ -1,0 +1,1348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Project</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .fas.fa-shopping-cart {
+            position: relative;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+
+    <header class="header">
+
+        <a href="#" class="logo"> <i class="fas fa-shopping-basket"></i>Groceries4U</a>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#categories">categories</a>
+            <a href="#products">products</a>
+            <a href="#features">features</a>
+            <a href="#review">review</a>
+            <a href="#blogs">blogs</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="fas fa-search" id="search-btn"></div>
+            <!-- <div class="fas fa-shopping-cart" id="cart-btn"></div> -->
+            <div class="fas fa-shopping-cart" id="cart-btn">0
+                <!-- <p class="item-count">0</p> -->
+            </div>
+            <div class="fas fa-user" id="login-btn"></div>
+        </div>
+
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <div class="shopping-cart">
+            <div class="total"> total : $0.00/- </div>
+            <a href="#" class="btn">checkout</a>
+        </div>
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+
+        <div class="content">
+            <h3>fresh and <span>organic</span> products for your</h3>
+            <p>Organica is where early adopters and innovation sockers find lively, imaginative tech before it hits the
+                mainstream.</p>
+            <a href="#" class="btn">shop now</a>
+        </div>
+
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- categories section starts  -->
+
+    <section class="categories" id="categories">
+
+        <h1 class="heading"> product <span>categories</span> </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="image/cat-1.png" alt="">
+                <h3>General</h3>
+                <p>upto 10% off</p>
+                <a href="#general" class="btn">shop now</a>
+            </div>
+
+            <div class="box">
+                <img src="image/cat-2.png" alt="">
+                <h3>fresh fruits</h3>
+                <p>upto 20% off</p>
+                <a href="#fruits" class="btn">shop now</a>
+            </div>
+
+            <div class="box">
+                <img src="/Grocy project/image/rice_gen.jpeg" alt="">
+                <h3>Rice Items</h3>
+                <p>upto 15% off</p>
+                <a href="#rice" class="btn">shop now</a>
+            </div>
+
+            <div class="box">
+                <img src="/Grocy project/image/oil_gen.jpeg" alt="">
+                <h3>Oil Items</h3>
+                <p>upto 25% off</p>
+                <a href="#oil" class="btn">shop now</a>
+            </div>
+
+            <div class="box">
+                <img src="/Grocy project/image/masalas_gen.jpeg" alt="">
+                <h3>Masalas</h3>
+                <p>upto 15% off</p>
+                <a href="#masalas" class="btn">shop now</a>
+            </div>
+
+            <div class="box">
+                <img src="/Grocy project/image/nuts_gen.jpeg" alt="">
+                <h3>Nuts</h3>
+                <p>upto 45% off</p>
+                <a href="#nuts" class="btn">shop now</a>
+            </div>
+            <div class="box">
+                <img src="/Grocy project/image/spices_gen.jpeg" alt="">
+                <h3>Spices</h3>
+                <p>upto 15% off</p>
+                <a href="#spices" class="btn">shop now</a>
+            </div>
+
+            <div class="box">
+                <img src="/Grocy project/image/flours_gen.jpeg" alt="">
+                <h3>Flours</h3>
+                <p>upto 45% off</p>
+                <a href="#flours" class="btn">shop now</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- categories section ends -->
+
+    <!-- products section starts  -->
+
+    <section class="products" id="products">
+
+        <h1 class="heading" id="general"> <span>General</span> </h1>
+
+        <div class="swiper product-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="/Grocy project/images/coffee_powder__67072.jpg" alt="">
+                    <h3>Coffee Powder</h3>
+                    <div class="price">
+                        <pre>Quantity:100gm   ₹133/-</pre>
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn add-to-cart" data-name="Coffee Powder" data-price="133">add to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="/Grocy project/images/shopping.webp" alt="">
+                    <h3>Tea Powder</h3>
+                    <div class="price">
+                        <pre>Quantity:100gm   ₹96/-</pre>
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn add-to-cart" data-name="Tea Powder" data-price="96">add to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="/Grocy project/images/sugar-shutterstock_615908132.jpg" alt="">
+                    <h3>Sugar</h3>
+                    <div class="price">
+                        <pre>Quantity:1kg   ₹50/-</pre>
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn add-to-cart" data-name="Sugar" data-price="50">add to cart</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper product-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="/Grocy project/images/saffron-1296x728-header.webp" alt="">
+                    <h3>Saffron</h3>
+                    <div class="price">
+                        <pre>Quantity:1gm   ₹299/-</pre>
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn add-to-cart" data-name="Saffron" data-price="299">add to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="/Grocy project/images/images (1).jpeg" alt="">
+                    <h3>Dry chillies</h3>
+                    <div class="price">
+                        <pre>Quantity:1kg   ₹550/-</pre>
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn add-to-cart" data-name="Dry chillies" data-price="550">add to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="/Grocy project/images/images (2).jpeg" alt="">
+                    <h3>Honey</h3>
+                    <div class="price">
+                        <pre>Quantity:1kg   ₹499/-</pre>
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn add-to-cart" data-name="Honey" data-price="499">add to cart</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper product-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="/Grocy project/images/jaggery.jpg" alt="">
+                    <h3>Jaggery</h3>
+                    <div class="price">
+                        <pre>Quantity:1kg   ₹60/-</pre>
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn add-to-cart" data-name="Jaggery" data-price="60">add to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="/Grocy project/images/rocksalt.jpg" alt="">
+                    <h3>Rock Salt</h3>
+                    <div class="price">
+                        <pre>Quantity:1kg   ₹18/-</pre>
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn add-to-cart" data-name="Rock Salt" data-price="18">add to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="/Grocy project/images/salt-sodium-chloride-crystals.jpg" alt="">
+                    <h3>Crystal Salt</h3>
+                    <div class="price">
+                        <pre>Quantity:1kg   ₹13/-</pre>
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn add-to-cart" data-name="Crystal Salt" data-price="13">add to cart</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="products" id="products">
+
+        <h1 class="heading" id="fruits"> <span>Fruits</span> </h1>
+
+        <div class="swiper product-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="/Grocy project/images/Apple.webp" alt="">
+                    <h3>Apple</h3>
+                    <div class="price">
+                        <pre>Quantity:1Dozen   ₹180/-</pre>
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn add-to-cart" data-name="Apple" data-price="180">add to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="/Grocy project/images/Banana.webp" alt="">
+                    <h3>Bananas</h3>
+                    <div class="price">
+                        <pre>Quantity:1Dozen   ₹60/-</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn add-to-cart" data-name="Bananas" data-price="60">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="/Grocy project/images/Grapes.webp" alt="">
+                <h3>Grapes</h3>
+                <div class="price"><pre>Quantity:500gm  ₹200/-</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn add-to-cart" data-name="Grapes" data-price="200">add to cart</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="swiper product-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide box">
+                <img src="/Grocy project/images/Orange.webp" alt="">
+                <h3>Orange</h3>
+                <div class="price"><pre>Quantity:1Dozen   ₹143/-</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn add-to-cart" data-name="Orange" data-price="143">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="/Grocy project/images/Pineapple.webp" alt="">
+                <h3>Pine Apple</h3>
+                <div class="price"><pre>Quantity:1 item   ₹60/-</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn add-to-cart" data-name="Pine Apple" data-price="60">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="/Grocy project/images/Watermelon.webp" alt="">
+                <h3>Watermelon</h3>
+                <div class="price"><pre>Quantity:2kg   ₹80/-</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn add-to-cart" data-name="Watermelon" data-price="80">add to cart</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="products" id="products">
+
+    <h1 class="heading" id="rice"> <span>Rice</span>Items </h1>
+
+    <div class="swiper product-slider">
+
+        <div class="swiper-wrapper">
+            <div class="swiper-slide box">
+                <img src="/Grocy project/images/41f7gU6lpsL._SX300_SY300_QL70_FMwebp_.webp" alt="">
+                <h3>Brown Rice</h3>
+                <div class="price"><pre>Quantity:5Kg   ₹523/-</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn add-to-cart" data-name="Brown Rice" data-price="523">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="/Grocy project/images/71eJaDWIxBL._AC_SX679_.jpg" alt="">
+                <h3>White Rice</h3>
+                <div class="price"><pre>Quantity:25Kg   ₹2300/-</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn add-to-cart" data-name="White Rice" data-price="2300">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="/Grocy project/images/Amazon-1121-Steam-Basmati-Rice10e.jpg" alt="">
+                <h3>Basmati rice</h3>
+                <div class="price"><pre>Quantity:1Kg   ₹250/-</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn add-to-cart" data-name="Basmati" data-price="250">add to cart</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="products" id="products">
+
+    <h1 class="heading" id="oil"> <span>Oils</span> </h1>
+
+    <div class="swiper product-slider">
+
+        <div class="swiper-wrapper">
+            <div class="swiper-slide box">
+                <img src="/Grocy project/images/41AL793d1QL._SX300_SY300_QL70_FMwebp_.webp" alt="">
+                <h3>Coconut Oil</h3>
+                <div class="price"><pre>Quantity:1 lt   ₹200/-</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn add-to-cart" data-name="Coconut Oil" data-price="200">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="/Grocy project/images/41dFxzMqOfL._SY445_SX342_QL70_FMwebp_.webp" alt="">
+                <h3>SunFlower Oil</h3>
+                <div class="price"><pre>Quantity:1 lt   ₹110/-</pre>
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn add-to-cart" data-name="SunFlower Oil" data-price="110">add to cart</a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="/Grocy project/images/palm oil.jpeg" alt="">
+                    <h3>Palm Oil</h3>
+                    <div class="price">
+                        <pre>Quantity:1 lt   ₹135/-</pre>
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn add-to-cart" data-name="Palm Oil" data-price="135">add to cart</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper product-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="/Grocy project/images/61NsStUvmsL._SL1500_.jpg" alt="">
+                    <h3>Mustard Oil</h3>
+                    <div class="price">
+                        <pre>Quantity:1 lt   ₹263/-</pre>
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn add-to-cart" data-name="Mustard Oil" data-price="263">add to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="/Grocy project/images/shopping (1).webp" alt="">
+                    <h3>Ghee</h3>
+                    <div class="price">
+                        <pre>Quantity:1 lt   ₹74/-</pre>
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn add-to-cart" data-name="Ghee" data-price="74">add to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="/Grocy project/images/Groundnut.webp" alt="">
+                    <h3>Ground nut Oil</h3>
+                    <div class="price">
+                        <pre>Quantity:1 lt   ₹150/-</pre>
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn add-to-cart" data-name="Ground nut Oil" data-price="150">add to cart</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="products" id="products">
+
+        <h1 class="heading" id="masalas"> <span>Masalas</span> </h1>
+
+        <div class="swiper product-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="/Grocy project/images/Garam Masala.jpg" alt="">
+                    <h3>Garam Masala</h3>
+                    <div class="price">
+                        <pre>Quantity:100gm   ₹85/-</pre>
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn add-to-cart" data-name="Garam Masala" data-price="85">add to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="/Grocy project/images/Chaat Masala.jpg" alt="">
+                    <h3>Chaat Masala</h3>
+                    <div class="price">
+                        <pre>Quantity:100gm   ₹72/-</pre>
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn add-to-cart" data-name="Chaat Masala" data-price="72">add to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="/Grocy project/images/Biryani Masala.jpg" alt="">
+                    <h3>Biryani Masala</h3>
+                    <div class="price">
+                        <pre>Quantity:100gm   ₹85/-</pre>
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn add-to-cart" data-name="Biryani Masala" data-price="85">add to cart</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper product-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="/Grocy project/images/Chicken Masala.jpg" alt="">
+                    <h3>Chicken Masala</h3>
+                    <div class="price">
+                        <pre>Quantity:100gm   ₹91/-</pre>
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn add-to-cart" data-name="Chicken Masala" data-price="91">add to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="/Grocy project/images/Tandoori Masala.jpg" alt="">
+                    <h3>Tandoori Masala</h3>
+                    <div class="price">
+                        <pre>Quantity:100gm   ₹78/-</pre>
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn add-to-cart" data-name="Tandoori Masala" data-price="78">add to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="/Grocy project/images/Fish Masala.jpg" alt="">
+                    <h3>Fish Masala</h3>
+                    <div class="price">
+                        <pre>Quantity:100gm   ₹52/-</pre>
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn add-to-cart" data-name="Fish Masala" data-price="52">add to cart</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper product-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="/Grocy project/images/Mutton Masala.jpg" alt="">
+                    <h3>Mutton Masala</h3>
+                    <div class="price">
+                        <pre>Quantity:100gm   ₹85/-</pre>
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn add-to-cart" data-name="Mutton Masala" data-price="4.99">add to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="/Grocy project/images/Sambar Masala.jpg" alt="">
+                    <h3>Sambar Masala</h3>
+                    <div class="price">
+                        <pre>Quantity:100gm   ₹68/-</pre>
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn add-to-cart" data-name="Sambar Masala" data-price="68">add to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="/Grocy project/images/redchilli.jpg" alt="">
+                    <h3>Red Chilli Powder</h3>
+                    <div class="price">
+                        <pre>Quantity:1Kg   ₹600/-</pre>
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn add-to-cart" data-name="Red Chilli Powder" data-price="600">add to cart</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="products" id="products">
+
+        <h1 class="heading" id="nuts"> <span>Nuts</span> </h1>
+
+        <div class="swiper product-slider">
+
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="/Grocy project/images/Pistachio (pista).webp" alt="">
+                    <h3>Pistachio</h3>
+                    <div class="price">
+                        <pre>Quantity:250gm   ₹649/-</pre>
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn add-to-cart" data-name="Pistachio" data-price="649">add to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="/Grocy project/images/Almonds.jpg" alt="">
+                    <h3>Almonds</h3>
+                    <div class="price">
+                        <pre>Quantity:250gm   ₹339/-</pre>
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn add-to-cart" data-name="Almonds" data-price="339">add to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="/Grocy project/images/Groundnut.webp" alt="">
+                    <h3>Ground Nuts</h3>
+                    <div class="price">
+                        <pre>Quantity:1Kg   ₹255/-</pre>
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn add-to-cart" data-name="Ground Nuts" data-price="255">add to cart</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="products" id="products">
+
+        <h1 class="heading" id="spices"> <span>Spices</span> </h1>
+
+        <div class="swiper product-slider">
+
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="/Grocy project/images/Pepper.jpg" alt="">
+                    <h3>Pepper</h3>
+                    <div class="price">
+                        <pre>Quantity:50gm   ₹159/-</pre>
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn add-to-cart" data-name="Pepper" data-price="159">add to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="/Grocy project/images/Mustard.jpg" alt="">
+                    <h3>Mustard</h3>
+                    <div class="price">
+                        <pre>Quantity:50gm   ₹25/-</pre>
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn add-to-cart" data-name="Mustard" data-price="25">add to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="/Grocy project/images/Tamarind.webp" alt="">
+                    <h3>Tamarind</h3>
+                    <div class="price">
+                        <pre>Quantity:200gm   ₹90/-</pre>
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn add-to-cart" data-name="Tamarind" data-price="90">add to cart</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper product-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="/Grocy project/images/bay Leaves(Biryani Leaves).jpg" alt="">
+                    <h3>Biryani Leaves</h3>
+                    <div class="price">
+                        <pre>Quantity:200gm   ₹190/-</pre>
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn add-to-cart" data-name="Biryani Leaves" data-price="190">add to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="/Grocy project/images/Shaw Jeera.jpg" alt="">
+                    <h3>Shaw Jeera</h3>
+                    <div class="price">
+                        <pre>Quantity:100gm   ₹85/-</pre>
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn add-to-cart" data-name="Shaw Jeera" data-price="85">add to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="/Grocy project/images/Chinnamon.jpg" alt="">
+                    <h3>cinnamon</h3>
+                    <div class="price">
+                        <pre>Quantity:100gm   ₹80/-</pre>
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn add-to-cart" data-name="chinnamon" data-price="80">add to cart</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper product-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="/Grocy project/images/Cloves.jpg" alt="">
+                    <h3>Cloves</h3>
+                    <div class="price">
+                        <pre>Quantity:100gm   ₹295/-</pre>
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn add-to-cart" data-name="Cloves" data-price="295">add to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="/Grocy project/images/Cardamom.webp" alt="">
+                    <h3>Cardamom</h3>
+                    <div class="price"> $4.99/- - 10.99/- </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn add-to-cart" data-name="Cardamom" data-price="4.99">add to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="/Grocy project/images/gall nut.jpg" alt="">
+                    <h3>Gall Nut</h3>
+                    <div class="price">
+                        <pre>Quantity:100gm   ₹80/-</pre>
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn add-to-cart" data-name="Gall Nut" data-price="80">add to cart</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="products" id="products">
+
+        <h1 class="heading" id="flours"> <span>Flours</span> </h1>
+
+        <div class="swiper product-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="/Grocy project/images/Wheat Flour.webp" alt="">
+                    <h3>Wheat Flour</h3>
+                    <div class="price">
+                        <pre>Quantity:1Kg   ₹50/-</pre>
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn add-to-cart" data-name="Wheat Flour" data-price="50">add to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="/Grocy project/images/Rice Flour.jpg" alt="">
+                    <h3>Rice Flour</h3>
+                    <div class="price">
+                        <pre>Quantity:1Kg   ₹285/-</pre>
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn add-to-cart" data-name="Rice Flour" data-price="285">add to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="/Grocy project/images/Bengal Gram Flour.webp" alt="">
+                    <h3>Bengal Gram Flour</h3>
+                    <div class="price">
+                        <pre>Quantity:1Kg   ₹110/-</pre>
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn add-to-cart" data-name="Bengal Gram Flour" data-price="110">add to cart</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper product-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="/Grocy project/images/Corn Flour.jpg" alt="">
+                    <h3>Corn Flour</h3>
+                    <div class="price">
+                        <pre>Quantity:1Km   ₹259/-</pre>
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn add-to-cart" data-name="Corn Flour" data-price="259">add to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="/Grocy project/images/maida.webp" alt="">
+                    <h3>Maida</h3>
+                    <div class="price">
+                        <pre>Quantity:1Kg   ₹80/-</pre>
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn add-to-cart" data-name="Maida" data-price="80">add to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="/Grocy project/images/makai atta.jpg" alt="">
+                    <h3>Makai Atta</h3>
+                    <div class="price">
+                        <pre>Quantity:1Kg   ₹96/-</pre>
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn add-to-cart" data-name="Makai Atta" data-price="9g">add to cart</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- products section ends -->
+
+    <!-- features section starts  -->
+
+    <section class="features" id="features">
+
+        <h1 class="heading"> our <span>features</span> </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="image/feature-img-1.png" alt="">
+                <h3>fresh and organic</h3>
+                <p>Fresh vegetables and fruits in cheap price.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+
+            <div class="box">
+                <img src="image/feature-img-2.png" alt="">
+                <h3>free delivery</h3>
+                <p>We always do fast delivery on our customers.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+
+            <div class="box">
+                <img src="image/feature-img-3.png" alt="">
+                <h3>easy payments</h3>
+                <p>It is very easy to pay on our website, you can pay easily.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- features section ends -->
+
+    <!-- review section starts  -->
+
+    <section class="products" id="products">
+
+        <h1 class="heading" id="review"> <span>Review</span> </h1>
+
+        <div class="swiper product-slider">
+
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="/Grocy project/image/dinu.jpg" alt="">
+                    <h3>Dinu</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">
+                        <pre>Items! r very fresh...
+Good qualitiy products</pre>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="/Grocy project/image/teja.jpg" alt="">
+                    <h3>Teja</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">
+                        <pre>Nice shipping and delivered
+before shipping time</pre>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="/Grocy project/image/raja.jpg" alt="">
+                    <h3>Raja</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">
+                        <pre>Nice website easy to
+handle</pre>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="/Grocy project/image/yasaswi.jpg" alt="">
+                    <h3>Yasaswi</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">
+                        <pre>Eww... customer service outstanding
+therw r allways quick 2 respond
+and resolve issues</pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- <section class="review" id="review">
+
+    <h1 class="heading"> customer's <span>review</span> </h1>
+
+    <div class="swiper review-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="image/pic-1.png" alt="">
+                <p>Very good website. All the stuff on this website is absolutely great. You all can buy your stuff from here.</p>
+                <h3>john</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/pic-2.png" alt="">
+                <p>Very good website. All the stuff on this website is absolutely great. You all can buy your stuff from here.</p>
+                <h3>Juliyana</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/pic-3.png" alt="">
+                <p>Very good website. All the stuff on this website is absolutely great. You all can buy your stuff from here.</p>
+                <h3>Jonathon</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/pic-4.png" alt="">
+                <p>Very good website. All the stuff on this website is absolutely great. You all can buy your stuff from here.</p>
+                <h3>Oliveya</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+    <!-- review section ends -->
+
+    <!-- blogs section starts  -->
+
+    <section class="blogs" id="blogs">
+
+        <h1 class="heading"> our <span>blogs</span> </h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="image/blog-1.jpg" alt="">
+                <div class="content">
+                    <div class="icons">
+                        <a href="#"> <i class="fas fa-user"></i> by user </a>
+                        <a href="#"> <i class="fas fa-calendar"></i> 1st oct, 2021 </a>
+                    </div>
+                    <h3>fresh and organic vegitables and fruits</h3>
+                    <p>Organica Is Where Early Adopters And Innovation Sockers Find Lively, Imaginative Tech Before It
+                        Hits The Mainstream.</p>
+                    <a href="https://www.earthytales.in/blog" target="_blank" class="btn">read more</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="image/blog-2.jpg" alt="">
+                <div class="content">
+                    <div class="icons">
+                        <a href="#"> <i class="fas fa-user"></i> by user </a>
+                        <a href="#"> <i class="fas fa-calendar"></i> 1st oct, 2021 </a>
+                    </div>
+                    <h3>fresh and organic vegitables and fruits</h3>
+                    <p>Organica Is Where Early Adopters And Innovation Sockers Find Lively, Imaginative Tech Before It
+                        Hits The Mainstream.</p>
+                    <a href="https://www.earthytales.in/blog" target="_blank" class="btn">read more</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="image/blog-3.jpg" alt="">
+                <div class="content">
+                    <div class="icons">
+                        <a href="#"> <i class="fas fa-user"></i> by user </a>
+                        <a href="#"> <i class="fas fa-calendar"></i> 1st oct, 2021 </a>
+                    </div>
+                    <h3>fresh and organic vegitables and fruits</h3>
+                    <p>Organica Is Where Early Adopters And Innovation Sockers Find Lively, Imaginative Tech Before It
+                        Hits The Mainstream.</p>
+                    <a href="https://www.earthytales.in/blog" target="_blank" class="btn">read more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- blogs section ends -->
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3> Grocery <i class="fas fa-shopping-basket"></i> </h3>
+                <p>Hello, v r cringies. We made this website for practice purpose only, We hope you all enjoy this
+                    project.</p>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#" class="links"> <i class="fas fa-phone"></i> +91 630-979-7569 </a>
+                <a href="#" class="links"> <i class="fas fa-phone"></i> +91 995 971 3458 </a>
+                <a href="#" class="links"> <i class="fas fa-envelope"></i> balla.raja78@gmail.com </a>
+                <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> Vijayawada, Ap, india - 520001 </a>
+            </div>
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i> home </a>
+                <a href="#features" class="links"> <i class="fas fa-arrow-right"></i> features </a>
+                <a href="#products" class="links"> <i class="fas fa-arrow-right"></i> products </a>
+                <a href="#categories" class="links"> <i class="fas fa-arrow-right"></i> categories </a>
+            </div>
+
+            <div class="box">
+                <h3>newsletter</h3>
+                <p>subscribe for latest updates</p>
+                <input type="email" placeholder="your email" class="email">
+                <input type="submit" value="subscribe" class="btn">
+                <img src="image/payment.png" class="payment-img" alt="">
+            </div>
+        </div>
+        <div class="credit"> created by <span> Kaushlendra </span> | all rights reserved </div>
+
+    </section>
+
+    <!-- footer section ends -->
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+
+    <script src="js/js2.js"></script>
+
+</body>
+
+</html>
